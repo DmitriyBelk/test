@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { SubmitErrorHandler, SubmitHandler, useForm } from 'react-hook-form'
+import img from '../../../src/assets/noun-magic-2704149 1.svg'
 import { generatePassword } from '../../utils/passGen'
 import { isEmail, isName, isPass } from '../../utils/validate'
 import {
@@ -85,7 +86,7 @@ const Form = () => {
 					/>
 					<StyledImg
 						onClick={() => setData({ ...data, password: generatePassword(8) })}
-						src='/src/assets/noun-magic-2704149 1.svg'
+						src={img}
 					/>
 					<StyledText>Место для указания результатов проверки ввода</StyledText>
 				</div>
