@@ -43,8 +43,8 @@ export const StyledButton = styled.button`
 
 export const StyledImg = styled.img`
 	position: absolute;
-	top: 35.5%;
-	left: 56.5%;
+	top: 15%;
+	left: 87%;
 	cursor: pointer;
 `
 

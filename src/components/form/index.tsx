@@ -74,7 +74,7 @@ const Form = () => {
 					/>
 					<StyledText>Место для указания результатов проверки ввода</StyledText>
 				</div>
-				<div>
+				<div style={{ position: 'relative' }}>
 					<StyledInput
 						placeholder='Пароль'
 						value={data.password}
