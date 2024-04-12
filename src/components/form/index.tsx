@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { SubmitErrorHandler, SubmitHandler, useForm } from 'react-hook-form'
 import { generatePassword } from '../../utils/passGen'
+import { isEmail, isName, isPass } from '../../utils/validate'
 import {
 	StyledButton,
 	StyledForm,
@@ -10,7 +11,6 @@ import {
 	StyledTitle,
 	StyledWrapper,
 } from './components'
-import { isEmail, isName, isPass } from './validate'
 
 interface MyForm {
 	name: string
@@ -46,7 +46,7 @@ const Form = () => {
 	const error: SubmitErrorHandler<MyForm> = data => {
 		console.log(data)
 	}
-	console.log(data.password.length);
+	console.log(data.password.length)
 
 	return (
 		<StyledForm onSubmit={handleSubmit(submit, error)}>

@@ -48,8 +48,6 @@ export const StyledImg = styled.img`
 	cursor: pointer;
 `
 
-export const StyledBlock = styled.div``
-
 export const StyledText = styled.p`
 	color: rgb(255, 255, 255);
 	font-family: Nunito;
